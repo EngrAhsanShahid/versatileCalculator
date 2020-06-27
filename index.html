@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      <div class="screen">
+        <p id="initial_text"></p>
+        <p id="result"></p>
+      </div>
+      <div class="button-area">
+        <div class="row">
+          <div class="col">
+            <button>MC</button>
+            <button>MR</button>
+            <button>M+</button>
+            <button>M-</button>
+            <button id="clear" onclick="clearAll()">C</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button id="seven" value="7" onclick="getValue('7')">7</button>
+            <button id="eight" value="8" onclick="getValue('8')">8</button>
+            <button onclick="getValue('9')">9</button>
+            <button onclick="getValue('/')">&#247;</button>
+            <button onclick="getValue('&Sqrt;')">&Sqrt;</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button onclick="getValue('4')">4</button>
+            <button onclick="getValue('5')">5</button>
+            <button onclick="getValue('6')">6</button>
+            <button id="multiply" value="X" onclick="getValue('*')">&times;</button>
+            <button onclick="getValue('&#37;')">&#37;</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button onclick="getValue('1')">1</button>
+            <button onclick="getValue('2')">2</button>
+            <button onclick="getValue('3')">3</button>
+            <button onclick="getValue('-')">&minus;</button>
+            <button onclick="getValue('1/x')">1/x</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button onclick="getValue('0')">0</button>
+            <button onclick="getValue('.')">.</button>
+            <button onclick="getValue('1')">+/-</button>
+            <button onclick="getValue('+')">+</button>
+            <button id="equal" onclick="getResult();">&#61;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
