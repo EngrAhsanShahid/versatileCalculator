@@ -21,7 +21,7 @@
             <button>MR</button>
             <button>M+</button>
             <button>M-</button>
-            <button id="clear" onclick="clearAll()">C</button>
+            <button id="clear" class="clearBtn" onclick="clearAll()">C</button>
           </div>
         </div>
         <div class="row">
@@ -30,7 +30,7 @@
             <button id="eight" value="8" onclick="getValue('8')">8</button>
             <button onclick="getValue('9')">9</button>
             <button onclick="getValue('/')">&#247;</button>
-            <button onclick="getValue('&Sqrt;')">&Sqrt;</button>
+            <button onclick="sqRoot('sqRoot')">&Sqrt;</button>
           </div>
         </div>
         <div class="row">
@@ -48,7 +48,7 @@
             <button onclick="getValue('2')">2</button>
             <button onclick="getValue('3')">3</button>
             <button onclick="getValue('-')">&minus;</button>
-            <button onclick="getValue('1/x')">1/x</button>
+            <button onclick="callDivide('1/x')">1/x</button>
           </div>
         </div>
         <div class="row">

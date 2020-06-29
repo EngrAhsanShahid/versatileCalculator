@@ -4,16 +4,24 @@
   margin: auto;
   text-align: center;
 }
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
 .calculator{
-  border: 1px solid black;
-  background-color: aliceblue;s
+  border: 10px solid black;
+  background-color: aliceblue;
+  border-radius: 30px;
 }
 .screen{
   width:100%;
   height: 150px;
   border: 1px solid black;
   /* border-radius: 25px; */
-  background-color: lightgray;
+  background-color: #362e2e;
 }
 .button-area{
   margin-top: 10px;
@@ -34,4 +42,17 @@ button:hover{
 }
 *{
   font-size: 20px;
+}
+p{
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 30px;
+}
+.clearBtn{
+  background-color: salmon;
+}
+.clearBtn:hover{
+  background-color: red;
 }
