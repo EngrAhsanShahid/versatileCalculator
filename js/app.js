@@ -5,10 +5,13 @@ function getValue(value){
 function clearAll(){    
     document.getElementById("initial_text").innerHTML = " ";
     document.getElementById("result").innerHTML = " ";
+    document.getElementById("text_after_equal").innerHTML = "";
 }
 function getResult(){
     var num = document.getElementById("initial_text").innerHTML;
     var result = eval(num);
+    num = document.getElementById("initial_text").innerHTML = "";
+    document.getElementById("initial_text").innerHTML = result;
     document.getElementById("result").innerHTML = result;
 }
 function sqRoot(value){
