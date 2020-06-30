@@ -43,7 +43,7 @@ button:hover{
 *{
   font-size: 20px;
 }
-p{
+span{
   color: aliceblue;
   display: flex;
   flex-direction: column;
